@@ -29,4 +29,5 @@ function updateValue(index, value){
 	let rgbaInput = document.getElementById('generated-color');
 	rgbaInput.value = `rgba(${ r_value }, ${ g_value }, ${ b_value }, ${ opacity })`;
 	rgbaInput.style.background = `rgba(${ r_value }, ${ g_value }, ${ b_value }, ${ opacity })`;
+	document.getElementById('theme-color').content = `rgba(${ r_value }, ${ g_value }, ${ b_value }, ${ opacity })`;
 }
