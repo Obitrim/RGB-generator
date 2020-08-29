@@ -1,5 +1,4 @@
 
-
 let ranges = document.getElementsByClassName('range');
 document.body.style.background = `rgba(255, 255, 255, 1)`;
 
@@ -8,9 +7,12 @@ let g_value = 255;
 let b_value = 255;
 let opacity = 1;
 
+ranges[0].value = r_value;
+ranges[1].value = g_value;
+ranges[2].value = b_value;
+
 for( let i = 0; i < ranges.length; i++ ){
 	ranges[i].addEventListener('input', function( event ){
-		
 		updateValue(i, Number(event.target.value));
 	});
 }
